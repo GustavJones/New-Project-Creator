@@ -1,4 +1,4 @@
-# New-Project-Creator
+# New Project Creator for C#
 
 ## Table of Contents
 * [General Info](#general-information)
