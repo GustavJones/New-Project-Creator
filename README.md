@@ -25,7 +25,7 @@
 - Saves your configuration to a simple text file
 
 ## Setup
-Install the used libraries from [nuget.org](nuget.org) and compile with .Net Core
+Install the used libraries from [nuget.org](https://www.nuget.org) and compile with .Net Core
 
 ## Usage
 Enter all the required information into all the text boxes and press generate.
