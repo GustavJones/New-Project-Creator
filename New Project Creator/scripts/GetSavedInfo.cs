@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using Eto.Forms;
 
@@ -6,29 +7,72 @@ namespace New_Project_Creator
 {
     class GetSavedInfo
     {
-        public FileStream saveFile;
+        public string[] defaultText;
+        private string saveFileName;
 
-        public GetSavedInfo(string saveFileName)
+        public GetSavedInfo(string SaveFileName, string[] DefaultText)
         {
-            saveFile = new FileStream(saveFileName + ".txt", FileMode.OpenOrCreate);
+            saveFileName = SaveFileName;
+            defaultText = DefaultText;
+            FileStream saveFile = new FileStream(saveFileName + ".txt", FileMode.OpenOrCreate);
+            saveFile.Close();
         }
 
-        public void SaveInfo()
+        public void SaveInfo(string[] TextLines)
         {
+            StreamWriter saveWriter = new StreamWriter(saveFileName + ".txt");
 
+            foreach (string line in TextLines)
+            {
+                saveWriter.WriteLine(line);
+            }
+
+            saveWriter.Close();
         }
-        public string LoadInfo()
+        public Dictionary<string, string> LoadInfo()
         {
-            StreamReader saveReader = new StreamReader(saveFile);
-            string output = saveReader.ReadToEnd();
+            StreamReader saveReader = new StreamReader(saveFileName + ".txt");
+            string[] rawText = saveReader.ReadToEnd().Split('\n');
+            saveReader.Close();
+
+            if (rawText[0] == "")
+            {
+                SaveInfo(defaultText);
+            }
+            saveReader = new StreamReader(saveFileName + ".txt");
+            rawText = saveReader.ReadToEnd().Split('\n');
+            var output = GetVariableValues(rawText);
 
             saveReader.Close();
             return output;
         }
 
-        public void Close()
+        private Dictionary<string, string> GetVariableValues(string[] Lines)
         {
-            saveFile.Close();
+            var output = new Dictionary<string, string>();
+
+            foreach (string line in Lines)
+            {
+                if (!line.StartsWith("#") && line != Lines[Lines.Length - 1])
+                {
+                    // Get VarName
+                    string varName = line.Substring(0, line.IndexOf('='));
+                    if (varName.Contains(" "))
+                    {
+                        varName = varName.Replace(" ", "");
+                    }
+
+                    // Get VarValue
+                    string varValue = line.Substring(line.IndexOf('=') + 1, line.Length - 2 - line.IndexOf('='));
+                    if (varValue.Contains(" "))
+                    {
+                        varValue = varValue.Replace(" ", "");
+                    }
+
+                    output.Add(varName, varValue);
+                }
+            }
+            return output;
         }
     }
 }

@@ -16,9 +16,12 @@ namespace New_Project_Creator
 		public MainForm()
 		{
 			XamlReader.Load(this);
-			defaultSettings = new GetSavedInfo("DefaultSettings");
-			Console.WriteLine(defaultSettings.LoadInfo());
-			defaultSettings.Close();
+			string[] defaultSaveFileText = {
+				"# This is the save file for New Project Creator Tool",
+				"save_location = /home/gustav/Downloads"
+			};
+			defaultSettings = new GetSavedInfo("DefaultSettings", defaultSaveFileText);
+			defaultSettings.LoadInfo();
 
 			templatesList = TemplateFinder.ExtractProjects();
 

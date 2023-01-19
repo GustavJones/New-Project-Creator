@@ -6,16 +6,16 @@ namespace New_Project_Creator
 {
     class TemplateFinder
     {
-        public static string ExecuteBashCommand(string command)
+        public static string ExecuteBashCommand(string Command)
         {
-            command = command.Replace("\"", "\"\"");
+            Command = Command.Replace("\"", "\"\"");
 
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "/bin/bash",
-                    Arguments = "-c \"" + command + "\"",
+                    Arguments = "-c \"" + Command + "\"",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     CreateNoWindow = true
@@ -28,17 +28,17 @@ namespace New_Project_Creator
             return process.StandardOutput.ReadToEnd();
         }
 
-        private static string GetIntrolessProjectsList(string rawProjects)
+        private static string GetIntrolessProjectsList(string RawProjects)
         {
             // Remove the intro from the top
-            int introEndIndex = rawProjects.IndexOf("Tags");
+            int introEndIndex = RawProjects.IndexOf("Tags");
             introEndIndex = introEndIndex + 4;
-            while (rawProjects[introEndIndex] == '-' || rawProjects[introEndIndex] == ' ' || rawProjects[introEndIndex] == '\n')
+            while (RawProjects[introEndIndex] == '-' || RawProjects[introEndIndex] == ' ' || RawProjects[introEndIndex] == '\n')
             {
                 introEndIndex++;
             }
 
-            return rawProjects.Substring(introEndIndex);
+            return RawProjects.Substring(introEndIndex);
         }
 
         public static Dictionary<string, string> ExtractProjects()
