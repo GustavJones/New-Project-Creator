@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form
+	xmlns="http://schema.picoe.ca/eto.forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:New_Project_Creator;assembly=New Project Creator"
+	Title="C# Project Creator GUI"
+	Height="600"
+	Width="800"
+	Resizable="false"
+	Maximizable="false"
+	Padding="10"
+	>
+	<StackLayout HorizontalContentAlignment="Center" Spacing="20">
+		<Label Text="Create New Project" Font="20 + underline + bold"/>
+
+		<StackLayout Orientation="Horizontal" Spacing="50">
+			<StackLayout Spacing="50">
+				<TextBox x:Name="projectNameTB" PlaceholderText="Project Name" Size="300, 10"/>
+				<TextBox x:Name="saveDirectoryTB" PlaceholderText="Save Directory" Size="300, 10"/>
+				<TextBox x:Name="extraOptionsTB" PlaceholderText="Extra Options" Size="300, 10"/>
+				<Button x:Name="startButton" Text="Start Generating" Click="GenerateProject"/>
+				<Label Text="Press &quot;Show More Options&quot; for help"/>
+			</StackLayout>
+
+			<StackLayout Spacing="50">
+				<ComboBox x:Name="templateSelector" Text="No Template Selected"/>
+
+				<Button Text="Show More Options" Click="ShowMoreOptions"/>
+				<TextArea x:Name="optionsOutput" Font="10" Width="320" Height="250" Wrap="false"/>
+			</StackLayout>
+		</StackLayout>
+	</StackLayout>
+
+	<Form.Menu>
+		<MenuBar>
+			<SubMenuItem Text="File">
+				<SubMenuItem Text="Generate Project">
+					<ButtonMenuItem Text="Console Application" Click="GenerateProject"/>
+					<ButtonMenuItem Text="EtoApp" Click="GenerateProject"/>
+				</SubMenuItem>
+				
+				<ButtonMenuItem Text="Create Preset" Shortcut="CommonModifier+Shift+P" Click="GenerateProject"/>
+			</SubMenuItem>
+
+			<MenuBar.QuitItem>
+				<ButtonMenuItem Text="Quit" Shortcut="CommonModifier+Q" Click="QuitApp" />
+			</MenuBar.QuitItem>
+		</MenuBar>
+	</Form.Menu>
+</Form>

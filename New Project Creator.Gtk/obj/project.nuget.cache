@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "HG8GZA+LFDoLkWQgUVrYO0dyLtrSh9GZ6xfqwvM7uMTIQt4klCtXs5q6d7YQYCMUkmfP68R/6cy91jw7jG5upg==",
+  "success": true,
+  "projectFilePath": "/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/New Project Creator.Gtk.csproj",
+  "expectedPackageFiles": [
+    "/home/gustav/.nuget/packages/atksharp/3.24.24.34/atksharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/cairosharp/3.24.24.34/cairosharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/eto.forms/2.7.2/eto.forms.2.7.2.nupkg.sha512",
+    "/home/gustav/.nuget/packages/eto.platform.gtk/2.7.2/eto.platform.gtk.2.7.2.nupkg.sha512",
+    "/home/gustav/.nuget/packages/eto.serialization.xaml/2.7.2/eto.serialization.xaml.2.7.2.nupkg.sha512",
+    "/home/gustav/.nuget/packages/gdksharp/3.24.24.34/gdksharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/giosharp/3.24.24.34/giosharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/glibsharp/3.24.24.34/glibsharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/gtksharp/3.24.24.34/gtksharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/pangosharp/3.24.24.34/pangosharp.3.24.24.34.nupkg.sha512",
+    "/home/gustav/.nuget/packages/portable.xaml/0.26.0/portable.xaml.0.26.0.nupkg.sha512",
+    "/home/gustav/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
