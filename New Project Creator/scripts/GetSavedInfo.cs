@@ -15,6 +15,11 @@ namespace New_Project_Creator
             saveFileName = SaveFileName;
             defaultText = DefaultText;
             FileStream saveFile = new FileStream(saveFileName + ".txt", FileMode.OpenOrCreate);
+            StreamReader checkEmpty = new StreamReader(saveFile);
+            if (checkEmpty.ReadToEnd() == "" || checkEmpty.ReadToEnd() == "\n")
+            {
+                SaveInfo(defaultText);
+            }
             saveFile.Close();
         }
 
@@ -29,6 +34,32 @@ namespace New_Project_Creator
 
             saveWriter.Close();
         }
+        
+        public void SetValue(string Variable, string Value)
+        {
+            StreamReader saveReader = new StreamReader(saveFileName + ".txt");
+            string[] fileContent = saveReader.ReadToEnd().Split('\n');
+            saveReader.Close();
+            List<int> variableIndexes = new List<int>();
+
+            for (int i = 0; i < fileContent.Length; i++)
+            {
+                if (fileContent[i].Contains(Variable) && !fileContent[i].StartsWith("#"))
+                {
+                    variableIndexes.Add(i);
+                }
+            }
+
+            foreach (int index in variableIndexes)
+            {
+                var line = fileContent[index];
+                var valueStartIndex = line.IndexOf('\"') + 1;
+                fileContent[index] = fileContent[index].Substring(0, valueStartIndex) + Value + "\"";
+            }
+
+            SaveInfo(fileContent);
+        }
+
         public Dictionary<string, string> LoadInfo()
         {
             StreamReader saveReader = new StreamReader(saveFileName + ".txt");
@@ -63,11 +94,7 @@ namespace New_Project_Creator
                     }
 
                     // Get VarValue
-                    string varValue = line.Substring(line.IndexOf('=') + 1, line.Length - 2 - line.IndexOf('='));
-                    if (varValue.Contains(" "))
-                    {
-                        varValue = varValue.Replace(" ", "");
-                    }
+                    string varValue = line.Substring(line.IndexOf('\"') + 1, line.Length - 2 - line.IndexOf('\"'));
 
                     output.Add(varName, varValue);
                 }

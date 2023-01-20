@@ -16,7 +16,7 @@
 		<StackLayout Orientation="Horizontal" Spacing="50">
 			<StackLayout Spacing="50">
 				<TextBox x:Name="projectNameTB" PlaceholderText="Project Name" Size="300, 10"/>
-				<TextBox x:Name="saveDirectoryTB" PlaceholderText="Save Directory" Size="300, 10"/>
+				<TextBox x:Name="saveDirectoryTB" PlaceholderText="Save Directory" Size="300, 10" TextChanged="UpdateSave"/>
 				<TextBox x:Name="extraOptionsTB" PlaceholderText="Extra Options" Size="300, 10"/>
 				<Button x:Name="startButton" Text="Start Generating" Click="GenerateProject"/>
 				<Label Text="Press &quot;Show More Options&quot; for help"/>

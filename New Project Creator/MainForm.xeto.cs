@@ -9,6 +9,7 @@ namespace New_Project_Creator
 	{
 		ComboBox templateSelector;
 		TextArea optionsOutput;
+		TextBox saveDirectoryTB;
 		GetSavedInfo defaultSettings;
 
 		Dictionary<string, string> templatesList;
@@ -18,10 +19,11 @@ namespace New_Project_Creator
 			XamlReader.Load(this);
 			string[] defaultSaveFileText = {
 				"# This is the save file for New Project Creator Tool",
-				"save_location = /home/gustav/Downloads"
+				"save_location = \"\""
 			};
 			defaultSettings = new GetSavedInfo("DefaultSettings", defaultSaveFileText);
-			defaultSettings.LoadInfo();
+
+			saveDirectoryTB.Text = defaultSettings.LoadInfo()["save_location"];
 
 			templatesList = TemplateFinder.ExtractProjects();
 
@@ -44,6 +46,11 @@ namespace New_Project_Creator
 				optionsOutput.Text = "Error! Choose a correct project";
 			}
 		}
+
+		protected void UpdateSave(object sender, EventArgs e)
+		{
+			defaultSettings.SetValue("save_location", saveDirectoryTB.Text);
+		}	
 
 		protected void GenerateProject(object sender, EventArgs e)
 		{
