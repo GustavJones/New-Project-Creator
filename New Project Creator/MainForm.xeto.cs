@@ -65,7 +65,8 @@ namespace New_Project_Creator
 
 				if (Directory.Exists(projectPath))
 				{
-					projectPath += " New";
+					optionsOutput.Text = "Directory already in use";
+					return;
 				}
 				try
 				{
@@ -79,14 +80,13 @@ namespace New_Project_Creator
 
 				string newProjectPath = projectPath;
 
-				if (projectPath.Contains(" "))
+				if (newProjectPath.Contains(" "))
 				{
-					for (int i = 0; i < projectPath.Length; i++)
+					for (int i = 0; i < newProjectPath.Length; i++)
 					{
-						//Console.WriteLine(projectPath.Length);
-						if (projectPath[i] == ' ' && projectPath[i] != projectPath[0])
+						if (newProjectPath[i] == ' ' && newProjectPath[i] != newProjectPath[0])
 						{
-							newProjectPath = projectPath.Insert(i, "\\");
+							newProjectPath = newProjectPath.Insert(i, "\\");
 							i++;
 						}
 					}
