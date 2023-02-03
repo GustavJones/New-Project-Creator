@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using Eto.Forms;
 using Eto.Serialization.Xaml;
 
@@ -9,7 +10,9 @@ namespace New_Project_Creator
 	{
 		ComboBox templateSelector;
 		TextArea optionsOutput;
+		TextBox projectNameTB;
 		TextBox saveDirectoryTB;
+		TextBox extraOptionsTB;
 		GetSavedInfo defaultSettings;
 
 		Dictionary<string, string> templatesList;
@@ -54,7 +57,55 @@ namespace New_Project_Creator
 
 		protected void GenerateProject(object sender, EventArgs e)
 		{
+			string projectPath;
 
+			if (projectNameTB.Text != "" && saveDirectoryTB.Text != "")
+			{
+				projectPath = Path.Combine(saveDirectoryTB.Text, projectNameTB.Text);
+
+				if (Directory.Exists(projectPath))
+				{
+					projectPath += " New";
+				}
+				try
+				{
+					Directory.CreateDirectory(projectPath);
+					optionsOutput.Text = "Project Folder Created";
+				}
+				catch
+				{
+					optionsOutput.Text = "Unknown Directory or Invalid Project Name";
+				}
+
+				string newProjectPath = projectPath;
+
+				if (projectPath.Contains(" "))
+				{
+					for (int i = 0; i < projectPath.Length; i++)
+					{
+						//Console.WriteLine(projectPath.Length);
+						if (projectPath[i] == ' ' && projectPath[i] != projectPath[0])
+						{
+							newProjectPath = projectPath.Insert(i, "\\");
+							i++;
+						}
+					}
+				}
+
+				try
+				{
+					optionsOutput.Text = TemplateFinder.ExecuteBashCommand($"cd {newProjectPath} && dotnet new {templatesList[templateSelector.Text]} " + extraOptionsTB.Text);
+				}
+				catch
+				{
+					optionsOutput.Text = "Error found while Generating Project";
+					Directory.Delete(projectPath);
+				}
+			}
+			else
+			{
+				optionsOutput.Text = "Please fill in the fields";
+			}
 		}
 
 		protected void QuitApp(object sender, EventArgs e)

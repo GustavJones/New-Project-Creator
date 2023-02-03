@@ -25,7 +25,16 @@ namespace New_Project_Creator
             process.Start();
             process.WaitForExit();
 
-            return process.StandardOutput.ReadToEnd();
+            string output = process.StandardOutput.ReadToEnd();
+
+            if (output != "")
+            {
+                return output;
+            }
+            else
+            {
+                throw new InvalidOperationException();
+            }
         }
 
         private static string GetIntrolessProjectsList(string RawProjects)

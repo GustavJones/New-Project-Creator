@@ -26,7 +26,7 @@
 				<ComboBox x:Name="templateSelector" Text="No Template Selected"/>
 
 				<Button Text="Show More Options" Click="ShowMoreOptions"/>
-				<TextArea x:Name="optionsOutput" Font="10" Width="320" Height="250" Wrap="false"/>
+				<TextArea x:Name="optionsOutput" ReadOnly="true" Font="10" Width="320" Height="250" Wrap="false"/>
 			</StackLayout>
 		</StackLayout>
 	</StackLayout>
