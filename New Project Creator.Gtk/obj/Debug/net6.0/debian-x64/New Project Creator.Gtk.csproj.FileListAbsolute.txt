@@ -1,0 +1,29 @@
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.Gtk
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.Gtk.deps.json
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.Gtk.runtimeconfig.json
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.Gtk.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/ref/New Project Creator.Gtk.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.Gtk.pdb
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/AtkSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/CairoSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/Eto.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/Eto.Gtk.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/Eto.Serialization.Xaml.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/GdkSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/GioSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/GLibSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/GtkSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/PangoSharp.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/Portable.Xaml.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/bin/Debug/net6.0/debian-x64/New Project Creator.pdb
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.csproj.AssemblyReference.cache
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.GeneratedMSBuildEditorConfig.editorconfig
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.AssemblyInfoInputs.cache
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.AssemblyInfo.cs
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.csproj.CoreCompileInputs.cache
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.csproj.CopyComplete
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/ref/New Project Creator.Gtk.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.pdb
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/obj/Debug/net6.0/debian-x64/New Project Creator.Gtk.genruntimeconfig.cache

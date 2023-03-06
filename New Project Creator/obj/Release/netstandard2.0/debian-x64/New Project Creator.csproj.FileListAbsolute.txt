@@ -1,0 +1,10 @@
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/bin/Release/netstandard2.0/debian-x64/New Project Creator.deps.json
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/bin/Release/netstandard2.0/debian-x64/New Project Creator.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/bin/Release/netstandard2.0/debian-x64/New Project Creator.pdb
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.csproj.AssemblyReference.cache
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.GeneratedMSBuildEditorConfig.editorconfig
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.AssemblyInfoInputs.cache
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.AssemblyInfo.cs
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.csproj.CoreCompileInputs.cache
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.dll
+/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator/obj/Release/netstandard2.0/debian-x64/New Project Creator.pdb

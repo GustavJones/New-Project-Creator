@@ -1,0 +1,2 @@
+# This is the save file for New Project Creator Tool
+save_location = ""

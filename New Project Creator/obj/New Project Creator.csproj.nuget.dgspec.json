@@ -65,6 +65,11 @@
           "warn": true,
           "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "debian-x64": {
+          "#import": []
+        }
       }
     }
   }

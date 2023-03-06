@@ -75,6 +75,81 @@
           "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {}
         }
       }
+    },
+    ".NETStandard,Version=v2.0/debian-x64": {
+      "Eto.Forms/2.7.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Eto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Eto.dll": {}
+        },
+        "build": {
+          "build/Eto.Forms.targets": {}
+        }
+      },
+      "Eto.Serialization.Xaml/2.7.2": {
+        "type": "package",
+        "dependencies": {
+          "Eto.Forms": "2.7.2",
+          "Portable.Xaml": "0.26.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Eto.Serialization.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Eto.Serialization.Xaml.dll": {}
+        },
+        "build": {
+          "build/Eto.Serialization.Xaml.targets": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Portable.Xaml/0.26.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Portable.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Portable.Xaml.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -429,6 +504,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "debian-x64": {
+        "#import": []
       }
     }
   }

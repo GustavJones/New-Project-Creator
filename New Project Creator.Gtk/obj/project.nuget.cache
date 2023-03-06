@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HG8GZA+LFDoLkWQgUVrYO0dyLtrSh9GZ6xfqwvM7uMTIQt4klCtXs5q6d7YQYCMUkmfP68R/6cy91jw7jG5upg==",
+  "dgSpecHash": "BgmP/+h8vR8YJrpeOfuWMjre76Zg4apvfpYndtUckod2AioBibDlDRFvX/fBAavtUj12lZhTFaM1soww210FKA==",
   "success": true,
   "projectFilePath": "/home/gustav/Documents/CSharp Projects/New Project Creator/New Project Creator.Gtk/New Project Creator.Gtk.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,8 @@
     "/home/gustav/.nuget/packages/gtksharp/3.24.24.34/gtksharp.3.24.24.34.nupkg.sha512",
     "/home/gustav/.nuget/packages/pangosharp/3.24.24.34/pangosharp.3.24.24.34.nupkg.sha512",
     "/home/gustav/.nuget/packages/portable.xaml/0.26.0/portable.xaml.0.26.0.nupkg.sha512",
-    "/home/gustav/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "/home/gustav/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "/home/gustav/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.13/microsoft.netcore.app.host.linux-x64.6.0.13.nupkg.sha512"
   ],
   "logs": []
 }
