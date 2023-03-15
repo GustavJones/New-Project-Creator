@@ -1,6 +1,6 @@
 # New Project Creator for C#
 
-![New Project Creator](/New\ Project\ Creator.png)
+![New Project Creator](/New%20Project%20Creator.png)
 
 ## Table of Contents
 * [General Info](#general-information)
