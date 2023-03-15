@@ -1,6 +1,6 @@
 # New Project Creator for C#
 
-![New Project Creator](https://github.com/GustavJones/New-Project-Creator/blob/b53ea4b8f0a326b4a43be307c27380b691ff029f/New%20Project%20Creator.png)
+![New Project Creator](/New Project Creator.png)
 
 ## Table of Contents
 * [General Info](#general-information)
