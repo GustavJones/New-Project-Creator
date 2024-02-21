@@ -11,7 +11,7 @@
 	Padding="10"
 	>
 	<StackLayout HorizontalContentAlignment="Center" Spacing="20">
-		<Label Text="Create New Project" Font="20 + underline + bold"/>
+		<Label Text="Create New Project" Font="Sans + 20 + underline + bold"/>
 
 		<StackLayout Orientation="Horizontal" Spacing="50">
 			<StackLayout Spacing="50">
@@ -26,7 +26,7 @@
 				<ComboBox x:Name="templateSelector" Text="No Template Selected"/>
 
 				<Button Text="Show More Options" Click="ShowMoreOptions"/>
-				<TextArea x:Name="optionsOutput" ReadOnly="true" Font="10" Width="320" Height="250" Wrap="false"/>
+				<TextArea x:Name="optionsOutput" ReadOnly="true" Font="Sans + 10" Width="320" Height="250" Wrap="false"/>
 			</StackLayout>
 		</StackLayout>
 	</StackLayout>
